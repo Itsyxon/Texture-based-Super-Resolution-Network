@@ -58,17 +58,17 @@ python test.py --upscale_factor 4 --path_model './resources/pretrained/tsrn_glob
 ## Start
 
 ```
-docker build . -t "name"
+docker build . -t dl-test
 
 ```
 
 ```
-docker run --name "name" -d -i -t "name" /bin/sh
+docker run --name dl-test -d -i -t dl-test /bin/sh
 
 ```
 
 ```
-docker exec -t -i "name" /bin/bash
+docker exec -t -i dl-test /bin/bash
 
 ```
 
