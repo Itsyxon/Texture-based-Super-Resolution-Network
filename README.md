@@ -76,3 +76,15 @@ docker exec -t -i dl-test /bin/bash
 python train.py --upscale_factor 8 --cropsize 256 --path_data 'src/datasets'
 
 ```
+
+## Testing images
+
+```
+cd src/test
+
+```
+
+```
+python tbsr-test.py
+
+```
