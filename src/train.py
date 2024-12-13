@@ -50,7 +50,7 @@ print('===> Loading datasets')
 train_set = SISR_Dataset(path=opt.path_data, cropsize=opt.cropsize,
                          upscale=opt.upscale_factor, bicubic=True)
 print('===> Found %d training images.' % len(train_set))
-training_data_loader = DataLoader(dataset=train_set, num_workers=0,  # num_workers изменено на 0 в связи с нехваткой
+training_data_loader = DataLoader(dataset=train_set, num_workers=0,  # num_workers изменено на 0 в связи с нехваткой памяти
                                   batch_size=opt.batch_size, shuffle=True)
 
 if opt.upscale_factor == 4:
